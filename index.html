@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/index_style.css">
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                        <img src="./images/logo@2x.png">
+                        <div class="mx-2">
+                            <span class="d-block">Weather</span>
+                            <span class="d-block">tagline goes here</span>
+                        </div>
+                  </a>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero-forecast">
+            <div class="hero">
+                <div class="container location position-relative">
+                    <input type="search" placeholder="Find your Location..." id="search" class="text-white" >
+                    <input type="button" value="Find" id="find" class="position-absolute">
+                </div>
+                <div class="container d-flex forecast-table mt-5">
+                    <div class="today-forecast">
+                        <div class="forecast-header d-flex justify-content-between">
+                            <span id="today">Sunday</span>
+                            <span id="today-date">14 January</span>
+                        </div>
+                        <div class="forecast-body p-4">
+                            <p id="city">Cairo</p>
+                            <div class="degree d-flex justify-content-start">
+                                <span id="today-degree" class="text-white"></span>
+                                <div>
+                                    <img id="today-icon" class="img-fluid" src="images/116.webp">
+                                </div>
+                            </div>
+                            <span class="text-primary" id="today-condition">Partly Cloud</span>
+                            <div class="forecast-imgs d-flex justify-content-start">
+                                <div>
+                                    <img src="images/icon-umberella.png">
+                                    <span>20%</span>
+                                </div>
+                                <div>
+                                    <img src="images/icon-wind.png">
+                                    <span>18km/h</span>
+                                </div>
+                                <div>
+                                    <img src="images/icon-compass.png">
+                                    <span>East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tmw-forecast">
+                        <div class="forecast-header">
+                            <span id="tmw">Monday</span>
+                        </div>
+                        <div class="forecast-body p-4 d-flex flex-column justify-content-center align-items-center">
+                                <img id="tmw-icon" src="images/116.webp" class="mt-3">
+                                <span id="tmw-degree-max" class="text-white"  class="my-2">19°C</span>
+                                <span id="tmw-degree-min" class="text-white">17°</span>
+                            <span id="tmw-condition" class="text-primary my-4">Sunny</span>
+                        </div>
+                    </div>
+                    <div class="third-day-forecast">
+                        <div class="forecast-header">
+                            <span id="third-day">Tuesday</span>
+                        </div>
+                        <div class="forecast-body p-4  d-flex flex-column justify-content-center align-items-center">
+                                <img id="third-day-icon" src="images/116.webp" class="mt-3">
+                                <span id="third-day-degree-max" class="text-white"  class="my-2">19°C</span>
+                                <span id="third-day-degree-min" class="text-white">17°</span>
+                            <span id="third-day-condition" class="text-primary my-4">Sunny</span>
+                        </div>
+                    </div>
+           </div>
+              </div>
+        </section>
+        <!-- Footer -->
+        <footer class="">
+            <div class="container d-flex justify-content-between">
+                <div class="footer-left position-relative">
+                    <input type="search" placeholder="Enter Your Email to Subscribe..." id="search" >
+                    <input type="button" value="Subscribe" id="subscribe" class="position-absolute">
+                    <p class="mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="footer-right">
+                    <i class="fa-brands fa-facebook-f text-white"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script src="JS/mine.js"></script>
+    </body>
+</html>

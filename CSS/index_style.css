@@ -1,0 +1,192 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --main: #1e202b;
+}
+/* ==============================Navbar================================== */
+header nav
+{
+    background-color: var(--main);
+    padding: 40px 0px !important;
+}
+nav a img
+{
+    width: 60px;
+}
+header nav a
+{
+    color: white !important;
+}
+nav a span:nth-child(1) 
+{
+    font-size:16px;
+    font-weight: 700;
+}
+nav a span:nth-child(2)
+{
+    font-size: 10px;
+    color: #bfc1c8 !important;
+}
+ul li a
+{
+    font-size: 14px !important;
+    padding: 5px 25px !important;
+    border: solid 2px transparent !important;
+    border-radius: 30px;
+    transition: 0.3 ease;
+}
+.active
+{
+    color: #009ad8 !important;
+    border: #009ad8 solid 2px !important;
+    border-radius: 30px;
+}
+ul li .nav-link:hover
+{
+    color: #009ad8 !important;
+    border: #009ad8 solid 2px !important;
+}
+/* =========================Hero Section========================== */
+.hero
+{
+    background-image: url(../images/banner.png);
+    height: 350px;
+    background-size: cover;
+    background-color: #1e202b;
+    padding: 70px 0;
+}
+.hero #search
+{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--main);
+    padding: 20px 50px 20px 20px;
+}
+.hero #find
+{
+    cursor: pointer;
+    background-color: #009ad8;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    right: 15px;
+    top: 5px;
+    padding: 15px 30px;
+}
+
+/* ========================Forecast Body======================== */
+.hero-forecast
+{
+    background-color: var(--main);
+    height: 100vh;
+}
+.forecast-table .today-forecast .forecast-header, .third-day-forecast .forecast-header, .tmw-forecast .forecast-header
+{
+    background: #2D303D;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: #bfc1c8;
+    border-radius: 5px 5px 0px 0px;
+}
+.today-forecast .forecast-body , .third-day-forecast .forecast-body
+{
+    color: #bfc1c8;
+    background-color: rgb(50,53,68);
+    border-radius: 0px 0px 5px 0px;
+}
+.tmw-forecast .forecast-header
+{
+    background-color: #222530;
+}
+.tmw-forecast .forecast-body
+{
+    background-color: #262936;
+    padding-bottom: 60px !important;
+}
+.third-day-forecast .forecast-body
+{
+    padding-bottom: 60px !important;
+}
+.forecast-body p
+{
+    font-size: 18px;
+}
+.forecast-body .degree
+{
+    font-size: 90px !important;
+    font-weight: 700;
+    overflow: hidden;
+}
+.forecast-body .text-primary
+{
+    font-size: 14px;
+}
+.forecast-body .forecast-imgs
+{
+    margin-top: 5px;
+    column-gap: 20px;
+}
+.today-forecast, .third-day-forecast, .tmw-forecast
+{
+    width: 33.3% !important;
+}
+/* ======================Footer============================================ */
+footer
+{
+    background-color: #262936;
+    padding: 50px;
+}
+.footer-left
+{
+    width: 55%;
+}
+.footer-left #search
+{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--main);
+    padding: 20px 100px 20px 20px !important;
+}
+.footer-left #subscribe
+{
+    cursor: pointer;
+    background-color: #009ad8;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    right: 0.5%;
+    top: 5px;
+    padding: 15px 30px;
+}
+.footer-left p
+{
+    font-size: 14px;
+    color: #BFC1C8;
+}
+.footer-right i
+{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b !important;
+    color: #009ad8 !important;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+.footer-right i:hover
+{
+    background-color: rgb(0, 154, 216) !important;
+    color: #fff !important;
+    cursor: pointer;
+}
